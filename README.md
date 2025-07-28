@@ -8,7 +8,7 @@
 
 ## 📺 项目简介
 
-邻诗TV 是一个轻量级、免费的在线视频搜索与观看平台，提供来自多个视频源的内容搜索与播放服务。无需注册，即开即用，支持多种设备访问。项目结合了前端技术和后端代理功能，可部署在支持服务端功能的各类网站托管服务上。**项目门户**： [邻诗TV.is-an.org](https://邻诗TV.is-an.org)
+邻诗TV 是一个轻量级、免费的在线视频搜索与观看平台，提供来自多个视频源的内容搜索与播放服务。无需注册，即开即用，支持多种设备访问。项目结合了前端技术和后端代理功能，可部署在支持服务端功能的各类网站托管服务上。**项目门户**： [邻诗TV.is-an.org](https://LibreTV.is-an.org)
 
 本项目基于 [bestK/tv](https://github.com/bestK/tv) 进行重构与增强。
 
@@ -26,10 +26,10 @@
 
 选择以下任一平台，点击一键部署按钮，即可快速创建自己的 邻诗TV 实例：
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FLibreSpark%2F邻诗TV)  
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/LibreSpark/邻诗TV)  
-[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/LibreSpark/邻诗TV)
-[![使用 EdgeOne Pages 部署](https://cdnstatic.tencentcs.com/edgeone/pages/deploy.svg)](https://edgeone.ai/pages/new?repository-url=https://github.com/LibreSpark/邻诗TV)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FLibreSpark%2FLibreTV)  
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/LibreSpark/LibreTV)  
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/LibreSpark/LibreTV)
+[![使用 EdgeOne Pages 部署](https://cdnstatic.tencentcs.com/edgeone/pages/deploy.svg)](https://edgeone.ai/pages/new?repository-url=https://github.com/LibreSpark/LibreTV)
 
 ## ⚠️ 安全与隐私提醒
 
@@ -103,12 +103,12 @@ Pull Bot 会反复触发无效的 PR 和垃圾邮件，严重干扰项目维护�
 ### Docker
 ```
 docker run -d \
-  --name 邻诗TV \
+  --name LibreTV \
   --restart unless-stopped \
   -p 8899:8080 \
   -e PASSWORD=your_password \
   -e ADMINPASSWORD=your_adminpassword \
-  bestzwei/邻诗TV:latest
+  bestzwei/LibreTV:latest
 ```
 
 ### Docker Compose
@@ -118,8 +118,8 @@ docker run -d \
 ```yaml
 services:
   邻诗TV:
-    image: bestzwei/邻诗TV:latest
-    container_name: 邻诗TV
+    image: bestzwei/LibreTV:latest
+    container_name: LibreTV
     ports:
       - "8899:8080" # 将内部 8080 端口映射到主机的 8899 端口
     environment:
@@ -210,13 +210,3 @@ npm run dev
 邻诗TV 仅作为视频搜索工具，不存储、上传或分发任何视频内容。所有视频均来自第三方 API 接口提供的搜索结果。如有侵权内容，请联系相应的内容提供方。
 
 本项目开发者不对使用本项目产生的任何后果负责。使用本项目时，您必须遵守当地的法律法规。
-
-## 🎉 贡献者福利
-
-活跃贡献者可以在 [Issue #268](https://github.com/LibreSpark/邻诗TV/issues/268) 中留言，申请免费上车 1Password Team，享受团队协作工具的便利！
-
-## 💝 支持项目
-
-如果您想支持本项目，可以考虑进行捐款：
-
-[![捐赠](https://img.shields.io/badge/爱心捐赠-无国界医生-1a85ff?style=for-the-badge&logo=medical-cross)](https://www.msf.hk/zh-hant/donate/general?type=one-off)
